@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+
+body{
+  min-height: 100vh;
+  margin: 0;
+}
+
+.rectangle{
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Aligns children to start and end of the container */
+  min-height: 100vh;
+  left: 0;
+  top: 0;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  padding-top: 1rem;  
+}
+
+.rectangle .footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  align-items: center;
+}
+
+.header :first-child{
+  width: 40px;
+  height: 40px;
+}
+
+.header :nth-child(2){
+  margin-right: auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 268px;
+}
+
+.nav a{
+  margin-left: 1.5rem;
+}
+
+.line{
+  display: flex;
+  align-items: flex-start;
+}
+
+.nav .nav__links--modifier{
+  color: #7E7E82;
+  display: flex;
+  align-self: center;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.nav > a:not(.line) {
+  text-decoration: none;
+  color:inherit;
+  margin-top: 32px;
+}
+
+.footer{
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5rem;
+  margin-bottom: 3vh;
+}
+
+.footer .bot--icons, .footer--language{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; 
+  gap: 1rem;
+  margin: 0;
+}
+
+.footer .contact--info {
+  color: #1B1C21;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+letter-spacing: -0.2px;
+margin: 0;
+}
+
+.footer .phone--number{
+  color: #1B1C21;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.6px;
+  margin: 0;
+  padding-bottom: 2vh;
+}
+
+p:hover{
+  filter: drop-shadow(16px 16px 10px black);
+}
+
+img:hover{
+  filter: contrast(200%);
+  filter: grayscale(50%);
+}
+
+a:hover{
+  filter: invert(70%);
+}
+
+.nav .nav__links--modifier:hover{
+  color: rgb(250, 64, 2);
+}
